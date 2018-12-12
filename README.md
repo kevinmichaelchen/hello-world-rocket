@@ -2,18 +2,28 @@
 
 [![Build Status](https://travis-ci.org/kevinmichaelchen/hello-world-rocket.svg?branch=master)](https://travis-ci.org/kevinmichaelchen/hello-world-rocket)
 
-A simple webserver built with Rust and Rocket.
+This project is a simple webserver built with [Rust](https://www.rust-lang.org)
+and [Rocket](https://rocket.rs).
+It comes with a simple unit test and TravisCI integration.
 
-## Getting started
+## Setting up the environment
+To setup your environment for the first, run
+```bash
+make setup
 ```
-# Download rustup
-curl https://sh.rustup.rs -sSf | sh
+This will download the nightly builds of Rust and its package manager, [cargo](https://doc.rust-lang.org/cargo/).
 
-# Get the latest nightly version of Rust (required by Rocket)
-rustup default nightly
-rustup update && cargo update
+## Running the server
+```bash
+# Start the server!
+make
 
-cargo run
-
+# Hit an endpoint!
 curl http://localhost:8000/hello/John/58
 ```
+
+## Running tests
+```bash
+make test
+```
+
