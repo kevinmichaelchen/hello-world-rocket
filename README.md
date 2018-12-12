@@ -1,3 +1,9 @@
+# hello-world-rocket
+
+[![Build Status](https://travis-ci.org/kevinmichaelchen/hello-world-rocket.svg?branch=master)](https://travis-ci.org/kevinmichaelchen/hello-world-rocket)
+
+A simple webserver built with Rust and Rocket.
+
 ## Getting started
 ```
 # Download rustup
