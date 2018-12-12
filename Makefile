@@ -16,3 +16,6 @@ setup:
 	rustup default nightly
 	rustup update && cargo update
 
+.PHONY: fmt
+fmt:
+	rustfmt --verbose --edition 2018 src/main.rs

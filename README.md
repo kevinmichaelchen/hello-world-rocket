@@ -27,3 +27,11 @@ curl http://localhost:8000/hello/John/58
 make test
 ```
 
+## Formatting code
+First, clone [rustfmt](https://github.com/rust-lang/rustfmt) and run `cargo install --path . --force`.
+That should install `rustfmt` in your `~/.cargo/bin`.
+You should be able to format files after that:
+```bash
+make fmt
+```
+
